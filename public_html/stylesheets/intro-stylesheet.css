@@ -12,8 +12,8 @@ body {
 }
 
 .me-img {
-    max-width: 300px;
-    height: auto;
+    max-width: 280px;
+    width: 300px;
     border-radius: 10px;
     margin-left: 30px;
     box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
@@ -22,27 +22,27 @@ body {
 .hi-i-am {
     color: #B9DCFF;
     text-align: center;
-    font-size: 40px;
+    font-size: 42px;
     margin-top: 20px;
 }
 
 .intro-name {
     color: #4fe0dc;
     text-align: center;
-    font-size: 35px;
-    font-weight: bolder;
+    font-size: 42px;
+    font-weight: bold;
     margin-top: 20px;
 }
 
 .subtitle {
-    font-size: 14px;
+    font-size: 18px;
     color: #8EA8C3;
 }
 
 .subtitle-intro {
     max-width: 600px;
     margin: auto;
-    font-size: 16px;
+    font-size: 18px;
     padding-top: 15px;
     padding-bottom: 30px;
     padding-right: 20px;

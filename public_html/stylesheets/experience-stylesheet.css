@@ -1,11 +1,48 @@
 .experience {
     color: #B9DCFF;
     font-size: 35px;
-    padding-top: 55px;
+    font-weight: bolder;
+    padding-top: 130px;
     padding-bottom: 35px;
     padding-left: 40px;
 }
 
 .button-group {
     text-align: center;
+}
+
+.job-one {
+    font-size: large;
+    padding-left: 50px;
+    padding-top: 45px;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+.job-two {
+    font-size: large;
+    padding-left: 50px;
+    padding-top: 45px;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+.job-three {
+    font-size: large;
+    padding-left: 50px;
+    padding-top: 45px;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+.job-points {
+    list-style-type: circle;
+    color: #8EA8C3;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 40px;
+    text-align: left;
 }

@@ -2,7 +2,7 @@
     color: #B9DCFF;
     font-size: 35px;
     font-weight: bolder;
-    padding-top: 130px;
+    padding-top: 90px;
     padding-bottom: 35px;
     padding-left: 40px;
 }
@@ -12,7 +12,7 @@
 }
 
 .job-one {
-    font-size: large;
+    font-size: medium;
     padding-left: 50px;
     padding-top: 45px;
     text-align: left;
@@ -21,7 +21,7 @@
 }
 
 .job-two {
-    font-size: large;
+    font-size: medium;
     padding-left: 50px;
     padding-top: 45px;
     text-align: left;
@@ -30,7 +30,7 @@
 }
 
 .job-three {
-    font-size: large;
+    font-size: medium;
     padding-left: 50px;
     padding-top: 45px;
     text-align: left;
@@ -42,7 +42,20 @@
     list-style-type: circle;
     color: #8EA8C3;
     padding-top: 15px;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-right: 40px;
     text-align: left;
+}
+
+
+@media (min-width: 1024px) { /* Desktop view */
+    .experience {
+        font-size: 40px;
+        margin-left: 160px;
+    }
+
+    .job-one, .job-two, .job-three {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
 }

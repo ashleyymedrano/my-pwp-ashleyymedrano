@@ -11,6 +11,7 @@
 .unm-img {
     max-width: 384px;
     height: auto;
+    margin-right: 100px;
     border-radius: 10px;
     box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
 }
@@ -18,9 +19,10 @@
 .about-me-intro {
     max-width: 700px;
     color: #8EA8C3;
-    padding-left: 60px;
+    padding-top: 15px;
+    padding-left: 30px;
     padding-bottom: 15px;
-    padding-right: 20px;
+    padding-right: 30px;
     font-size: 15px;
     line-height: 26px;
 }
@@ -53,13 +55,18 @@ li::marker {
     font-weight: bolder;
 }
 
-.about-last {
-    max-width: 700px;
-    color: #8EA8C3;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-bottom: 15px;
-    padding-right: 20px;
-    font-size: 15px;
-    line-height: 26px;
+
+@media (min-width: 1024px) {
+
+    .about-me-intro,
+    .about-job-list {
+        font-size: 18px; /* Increase text size */
+        margin-left: 160px; /* Move text to the right */
+        padding-right: 1px; /* Increase right padding */
+    }
+
+    .about-me {
+        font-size: 40px; /* Increase the size of the "/about me" text specifically */
+        margin-left: 160px; /* Move text to the right */
+    }
 }

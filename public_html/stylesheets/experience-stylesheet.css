@@ -48,14 +48,16 @@
 }
 
 
-@media (min-width: 1024px) { /* Desktop view */
+@media (min-width: 768px) { /* Desktop view */
     .experience {
         font-size: 40px;
         margin-left: 160px;
     }
 
     .job-one, .job-two, .job-three {
-        padding-top: 0px;
-        margin-top: 0px;
+        padding-top: 0;
+        margin-top: 0;
+        margin-left: 20px;
+        margin-right: 80px;
     }
 }

@@ -122,17 +122,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// smooth tab functionality
-const tabButtons = document.querySelectorAll('.tab-button');
-const jobContents = document.querySelectorAll('.job-content');
-
-tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Remove 'active' class from all job contents
-        jobContents.forEach(content => content.classList.remove('active'));
-
-        // Get the target content and add 'active' class to it
-        const target = button.getAttribute('data-target');
-        document.querySelector(`#${target}`).classList.add('active');
-    });
-});

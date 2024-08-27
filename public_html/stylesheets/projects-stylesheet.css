@@ -7,10 +7,22 @@
     padding-left: 40px;
 }
 
+.projects-js {
+    margin: 1rem 0;
+    transform: translateY(70px);
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.projects-js-visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 
 @media (min-width: 1024px) {
     .projects {
         font-size: 40px; /* Increase the size of the "/about me" text specifically */
-        margin-left: 160px;
+        margin-left: 100px;
     }
 }

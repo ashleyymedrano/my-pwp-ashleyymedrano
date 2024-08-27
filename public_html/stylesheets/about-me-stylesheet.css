@@ -5,21 +5,33 @@
     padding-top: 100px;
     padding-bottom: 35px;
     padding-left: 40px;
+}
 
+/*about me functionality*/
+.about-me-js {
+    margin: 1rem 0;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.about-me-js-visible {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .unm-img {
-    max-width: 384px;
+    max-width: 350px;
     height: auto;
     margin-top: 20px;
-    margin-right: 70px;
+    margin-right: 170px;
     margin-left: 20px;
     border-radius: 10px;
     box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
 }
 
 .about-me-intro {
-    max-width: 600px;
+    max-width: 800px;
     color: #8EA8C3;
     padding-top: 15px;
     padding-left: 30px;
@@ -58,16 +70,18 @@ li::marker {
 }
 
 
-@media (min-width: 768px) {
-    .about-me-intro,
-    .about-job-list {
-        font-size: 18px; /* Increase text size */
-        margin-left: 160px; /* Move text to the right */
-        padding-right: 1px; /* Increase right padding */
+@media (min-width: 1024px) {
+    .about-me {
+        font-size: 40px;
+        margin-left: 100px;
     }
 
-    .about-me {
-        font-size: 40px; /* Increase the size of the "/about me" text specifically */
-        margin-left: 160px; /* Move text to the right */
+    .about-me-intro,
+    .about-job-list {
+        font-size: 19px;
+        margin-left: 100px;
+        padding-right: 1px;
+        padding-top: 10px;
     }
+
 }

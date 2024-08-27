@@ -1,6 +1,35 @@
 html {
     background-color: #1F3452;
+    scroll-behavior: smooth;
 }
+
+/*functionality for navbar*/
+.navbar {
+    margin: 1rem 0;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.navbar-visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+/* end of navbar functionality*/
+
+/*This is for intro functionality/*/
+.fade-in-section {
+    margin: 1rem 0;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.fade-in-section-visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+/*end of intro functionality*/
 
 body {
     font-family: NTR, sans-serif;
@@ -12,7 +41,7 @@ body {
 }
 
 .me-img {
-    max-width: 280px;
+    max-width: 600px;
     width: 300px;
     border-radius: 10px;
     box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
@@ -32,6 +61,18 @@ body {
     font-weight: bold;
     margin-top: 16px;
 }
+
+/*for intro animation*/
+@keyframes blink {
+    0% { opacity: 10; }
+    50% { opacity: 0; }
+    100% { opacity: 10; }
+}
+
+.blinking {
+    animation: blink 3s infinite; /* Adjust the duration (1s) as needed */
+}
+/*end of intro animation*/
 
 .subtitle {
     font-size: 18px;
@@ -58,23 +99,23 @@ body {
 
 @media (min-width: 1024px) {
     .me-img {
-        width: 800px; /* Increase image size */
+        width: 800px;
     }
 
     .hi-i-am {
-        font-size: 53px; /* Increase font size */
+        font-size: 53px;
     }
 
     .intro-name {
-        font-size: 53px; /* Increase font size */
+        font-size: 53px;
     }
 
     .subtitle, .subtitle-intro {
-        font-size: 18px; /* Increase font size */
+        font-size: 22px;
     }
 
     .button button {
-        font-size: 16px; /* Increase font size */
-        padding: 12px 24px; /* Increase padding */
+        font-size: 20px;
+        padding: 12px 24px;
     }
 }

@@ -7,6 +7,33 @@
     padding-left: 40px;
 }
 
+/*experience functionality*/
+.experience-dt-js {
+    margin: 1rem 0;
+    transform: translateY(60px);
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.experience-dt-js-visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*functionality for buttons in mobile view*/
+.hidden {
+    display: none;
+}
+
+/*functionality for buttons in desktop view*/
+.job-content {
+    display: none;
+}
+
+.job-content.active {
+    display: block;
+}
+
 .button-group {
     text-align: center;
 }
@@ -48,16 +75,17 @@
 }
 
 
-@media (min-width: 768px) { /* Desktop view */
+@media (min-width: 1024px) { /* Desktop view */
     .experience {
         font-size: 40px;
-        margin-left: 160px;
+        margin-left: 100px;
     }
 
     .job-one, .job-two, .job-three {
+        font-size: 20px;
         padding-top: 0;
         margin-top: 0;
-        margin-left: 20px;
-        margin-right: 80px;
+        margin-left: 2px;
+        margin-right: 110px;
     }
 }

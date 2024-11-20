@@ -95,6 +95,8 @@ body {
     text-align: center;
 }
 
+
+
 @media (min-width: 1024px) {
     .me-img {
         width: 800px;

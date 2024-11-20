@@ -62,17 +62,23 @@ body {
     margin-top: 16px;
 }
 
-/*for intro animation*/
-@keyframes blink {
-    0% { opacity: 10; }
-    50% { opacity: 0; }
-    100% { opacity: 10; }
+/* Typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
 }
 
-.blinking {
-    animation: blink 3s infinite; /* Adjust the duration (1s) as needed */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #4fe0dc; }
 }
-/*end of intro animation*/
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #4fe0dc;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
 
 .subtitle {
     font-size: 18px;
@@ -94,8 +100,6 @@ body {
 .button {
     text-align: center;
 }
-
-
 
 @media (min-width: 1024px) {
     .me-img {

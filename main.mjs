@@ -3,21 +3,18 @@ import 'flowbite'
 
 
 document.addEventListener("DOMContentLoaded", function() {
-
     // navbar element
-    const navBars = document.querySelectorAll(".navbar");
+    const navBars = document.querySelectorAll(".navbar")
     navBars.forEach(navBar => {
-        navBar.classList.add("navbar-visible");
-    });
-});
-
+        navBar.classList.add("navbar-visible")
+    })
+})
 
 // intro section
 const fadeInSections = document.querySelectorAll(".fade-in-section");
 fadeInSections.forEach(section => {
     section.classList.add("fade-in-section-visible");
-});
-
+})
 
 function isInView(element) {
     const rect = element.getBoundingClientRect();
@@ -26,7 +23,6 @@ function isInView(element) {
         rect.top < (window.innerHeight || document.documentElement.clientHeight)
     );
 }
-
 
 //about me section
 function checkAboutMeInView() {
@@ -37,7 +33,6 @@ function checkAboutMeInView() {
         }
     });
 }
-
 
 // Experience section desktop view
 function checkExperienceInView() {
@@ -70,10 +65,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const hiIAmElement = document.querySelector(".intro-name");
 
     if (hiIAmElement) {
-        hiIAmElement.classList.add("blinking");
+        hiIAmElement.classList.add("typing");
     }
 });
-
 
 //responsive buttons in experience section in mobile view
 document.addEventListener('DOMContentLoaded', () => {
@@ -97,7 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
 
 //responsive buttons in experience section in desktop view
 document.addEventListener('DOMContentLoaded', () => {

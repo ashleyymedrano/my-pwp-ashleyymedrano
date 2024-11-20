@@ -94,6 +94,13 @@ document.addEventListener('DOMContentLoaded', () => {
             // Show the clicked tab's content and add 'active' class to the button
             targetContent.classList.remove('hidden');
             button.classList.add('active');
+
+            // Add fade-in effect to job points
+            const jobPoints = targetContent.querySelectorAll('.job-points li');
+            jobPoints.forEach(point => {
+                point.classList.add('fade-in');
+                setTimeout(() => point.classList.add('visible'), 10);
+            });
         });
     });
 });
@@ -118,6 +125,13 @@ document.addEventListener('DOMContentLoaded', () => {
             // Show the clicked tab's content and add 'active' class to the button
             targetContent.classList.add('active');
             button.classList.add('active');
+
+            // Add fade-in effect to job points
+            const jobPoints = targetContent.querySelectorAll('.job-points li');
+            jobPoints.forEach(point => {
+                point.classList.add('fade-in');
+                setTimeout(() => point.classList.add('visible'), 10);
+            });
         });
     });
 });
